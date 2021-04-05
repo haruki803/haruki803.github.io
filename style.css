@@ -1,0 +1,228 @@
+@charset "utf-8";
+/*** レイアウト　***/
+/*ページ全体の幅、レイアウトをセンタリング*/
+
+/* ************************************************
+*  all
+* ************************************************ */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  text-align:left;
+  font-size: 12px;
+  font-family:"Lora","ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  color: #111;
+}
+
+a {
+  outline: none;
+  color: #111;
+}
+a:visited,:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #c86464;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+/* ************************************************
+*  clearfix
+* *************************************************/
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+/* ************************************************
+*  layout
+* ************************************************ */
+
+/*ページ全体の幅、レイアウトをセンタリング*/
+#container {
+  margin: 0px auto;
+  width: 1000px;
+  text-align: left;
+}
+
+/*ヘッダー*/
+
+#header {
+  clear: both;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/*サイド*/
+#side {
+  float: left;
+  width: 200px;
+  padding: 30px 0px;
+}
+
+/*メイン*/
+#main {
+  float: right;
+  width: 700px;
+  padding: 30px 0px;
+}
+
+/*フッター（コピーライト）*/
+#footer {
+  clear: both;
+  padding: 30px 0 20px;
+  width: 100%;
+  border-top: 1px solid #000000;
+  color: #666;
+}
+
+body{
+	background-color:#ffffff;
+}
+
+/***** ヘッダー *****/
+#header .header_top ul li{
+	padding: 10px 0px;
+	display: inline;
+	float: right;
+	margin-left: 20px;
+}
+
+#cart{
+	padding: 2px 0px;
+	font-size: 15px;
+	vertical-align: center
+}
+
+#logo{
+	padding: 30px 0px;
+	display: block;
+	margin: auto;
+}
+#header .navi ul{
+	font-size: 0px;
+	text-align: center;
+}
+
+#header .navi ul li{
+	padding-bottom: 5px;
+	display: inline-block;
+	width: 20%;
+	font-size:12px;
+	border-bottom: 1px solid #000000;
+}
+
+/***** メイン *****/
+h3{
+	font-size: 18px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000000;
+}
+.all a{
+	margin: 0px;
+	padding: 5px;
+	float: right;
+}
+
+/* ニュースリスト */
+#news{
+	margin-bottom: 50px;
+}
+
+#news dt{
+	float: left;
+}
+
+#news dd{
+	margin-left: 80px;
+}
+
+#news .contents{
+	margin-bottom: 15px;
+}
+
+.all_news{
+	padding: 5px;
+	float: right;
+}
+
+/* 新着アイテム */
+.box{
+	width: 100%;
+	height: 350px;
+}
+
+#new_item{
+	height: 400px;
+}
+
+.item_box{
+	margin: 15px;
+	float:left;
+}
+
+.detail p{
+	margin: 5px 0px;
+}
+
+
+/* サイドボックス */
+#side{
+	padding-right: 50px;
+}
+
+.side_box{
+	height: 100%;
+	margin-bottom: 30px;
+}
+
+#side ul li{
+	list-style: none;
+	margin-top: 20px;
+}
+
+/* フッター */
+#footer .footer_left{
+	width: 450px;
+	margin: 25px;
+	float: left;
+
+}
+
+#footer .footer_right{
+	width: 450px;
+	margin: 25px;
+	float: right;
+
+}
+#footer ul li{
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.footer_right ul li ul li i{
+	display: inline-block;
+	float: left;
+	margin-right: 30px;
+}
